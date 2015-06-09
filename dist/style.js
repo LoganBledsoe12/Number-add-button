@@ -4,5 +4,10 @@ var numberClick = 0;
 function buttonClick (){
 	numberClick ++;
 	console.log (numberClick);
-	$clickMeButton.text(numberClick+ ' likes');
+	var likes = 'likes'
+	if (numberClick===1){
+		likes = 'like'
+	}
+	$clickMeButton.text(numberClick+ likes);
+
 }
